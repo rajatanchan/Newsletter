@@ -28,10 +28,10 @@ app.post("/",function(req,res){
       }
     ]
   };
-  const url = "https://us11.api.mailchimp.com/3.0/lists/31093206e0";
+  const url = "https://us14.api.mailchimp.com/3.0/lists/a1f6282dd6";
   const options = {
     method: "POST",
-    auth: "Rajat:52d9b2708c5585dfacf8a139be7c03d3-us11"
+    auth: "Darbur:e0bb160f4141fc4935ab36026a0fc97d-us14"
   }
   const jsonData = JSON.stringify(data);
  const request = https.request(url,options,function(response){
@@ -58,6 +58,6 @@ app.listen(process.env.PORT || 3000,function(){
 })
 
 // API KEY
-// 52d9b2708c5585dfacf8a139be7c03d3-us11
+// e0bb160f4141fc4935ab36026a0fc97d-us14
 // List idea
-// 31093206e0
+// a1f6282dd6
